@@ -26,7 +26,7 @@ export default function Hero() {
               <span>Me contacter</span>
             </a>
             <a 
-              href="/moncv.pdf" 
+              href="/fred-folio/moncv.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-slate-800 rounded-lg font-medium hover:bg-slate-50 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 border border-slate-200 flex items-center space-x-2"
