@@ -1,4 +1,4 @@
-import { Code2, Database, Cloud, Shield } from 'lucide-react';
+import { Database, Cloud, Store } from 'lucide-react';
 export default function ApisServices() {
   const apisServices = [
     {
@@ -14,6 +14,14 @@ export default function ApisServices() {
       icon: Database,
       services: [
         { name: 'AWS S3', description: 'Stockage d\'objets et fichiers' },
+      ],
+    },
+    {
+      category: 'Distribution & Stores',
+      icon: Store,
+      services: [
+        { name: 'App Store', description: 'Publication iOS' },
+        { name: 'Google Play Store', description: 'Publication Android' },
       ],
     },
   ];
