@@ -1,5 +1,6 @@
 {
-  "name": "https://kouamefreddev.github.io/fred-folio",
+  "name": "portfolio",
+  "homepage": "https://kouamefreddev.github.io/fred-folio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
