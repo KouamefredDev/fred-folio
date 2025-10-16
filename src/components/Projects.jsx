@@ -81,6 +81,7 @@ export default function Projects() {
                       href={project.liveUrl}
                       target='_blank'
                       className="flex-1 flex items-center justify-center space-x-2 px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors font-medium"
+                      rel="noreferrer"
                     >
                       <ExternalLink className="w-4 h-4" />
                       <span>Voir</span>
@@ -97,6 +98,7 @@ export default function Projects() {
                       href={project.githubUrl}
                       target='_blank'
                       className="flex items-center justify-center px-4 py-2 bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200 transition-colors border border-slate-200"
+                      rel="noreferrer"
                     >
                       <Github className="w-5 h-5" />
                     </a>

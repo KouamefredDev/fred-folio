@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { Check, Package, Zap, Code, Settings, BookOpen, Briefcase, Clock, Users, Eye } from 'lucide-react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function Prestations() {
-  const [activeSection, setActiveSection] = useState('prestation');
-  
   const [selectedCategory, setSelectedCategory] = useState('all');
   const prestations = [
     {
@@ -135,7 +131,7 @@ export default function Prestations() {
     : prestations.filter(p => p.category === selectedCategory);
 
   return (
-<section id="prestations" className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-slate-100">
+    <section id="prestations" className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-slate-100">
       <div className="max-w-7xl mx-auto">
         {/* Header similaire à Hero */}
         <div className="flex flex-col items-center text-center mb-16">
