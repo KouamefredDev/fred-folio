@@ -224,7 +224,7 @@ export default function Prestations() {
               Je peux vous proposer une solution sur mesure adaptée à votre projet.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a href="/#contact" className="px-8 py-4 bg-slate-800 text-white rounded-lg font-medium hover:bg-slate-900 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+              <a href="/fred-folio/#contact" className="px-8 py-4 bg-slate-800 text-white rounded-lg font-medium hover:bg-slate-900 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
                 Formulaire de contact
               </a>
             </div>

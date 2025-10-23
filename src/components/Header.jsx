@@ -1,6 +1,7 @@
 import { Code2, Menu, X } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Header({ activeSection, setActiveSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,26 +12,47 @@ export default function Header({ activeSection, setActiveSection }) {
     { id: 'home', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
     { id: 'skills', label: 'Compétences' },
+    { id: 'apis-services', label: 'Services API' },
     { id: 'experience', label: 'Expérience' },
     { id: 'projects', label: 'Projets' },
     { id: 'contact', label: 'Contact' },
     { id: 'prestation', label: 'Prestation', external: true },
   ];
 
+  // 🔹 Scroll spy automatique uniquement sur la page d'accueil
+  useEffect(() => {
+    if (location.pathname !== '/') return;
+
+    const sections = menuItems
+      .filter(item => !item.external)
+      .map(item => document.getElementById(item.id))
+      .filter(Boolean);
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section.offsetTop <= scrollPosition) {
+          setActiveSection(section.id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [menuItems, setActiveSection, location.pathname]);
+
   const scrollToSection = (sectionId) => {
-    setActiveSection(sectionId);
     setIsMenuOpen(false);
-    
-    // Si on n'est pas sur la page d'accueil, retourner d'abord à l'accueil
+
     if (location.pathname !== '/') {
       navigate('/');
-      // Attendre que la page se charge, puis scroller
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         element?.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     } else {
-      // Si déjà sur la page d'accueil, scroller directement
       const element = document.getElementById(sectionId);
       element?.scrollIntoView({ behavior: 'smooth' });
     }
@@ -56,6 +78,7 @@ export default function Header({ activeSection, setActiveSection }) {
             <span className="text-xl font-bold text-slate-800">Kouamefred</span>
           </div>
 
+          {/* Menu desktop */}
           <nav className="hidden md:flex space-x-1">
             {menuItems.map((item) =>
               item.external ? (
@@ -71,21 +94,26 @@ export default function Header({ activeSection, setActiveSection }) {
                   {item.label}
                 </Link>
               ) : (
-                <button
+                <ScrollLink
                   key={item.id}
+                  to={item.id}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    activeSection === item.id && location.pathname === '/'
+                  className={`px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-all duration-200 ${
+                    location.pathname === '/' && activeSection === item.id
                       ? 'bg-slate-800 text-white'
                       : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                   }`}
                 >
                   {item.label}
-                </button>
+                </ScrollLink>
               )
             )}
           </nav>
 
+          {/* Menu mobile */}
           <button
             className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -113,17 +141,21 @@ export default function Header({ activeSection, setActiveSection }) {
                   {item.label}
                 </Link>
               ) : (
-                <button
+                <ScrollLink
                   key={item.id}
+                  to={item.id}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
                   onClick={() => scrollToSection(item.id)}
-                  className={`w-full text-left px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    activeSection === item.id && location.pathname === '/'
+                  className={`block w-full text-left px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-all duration-200 ${
+                    location.pathname === '/' && activeSection === item.id
                       ? 'bg-slate-800 text-white'
                       : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                   }`}
                 >
                   {item.label}
-                </button>
+                </ScrollLink>
               )
             )}
           </nav>

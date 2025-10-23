@@ -7,7 +7,7 @@ export default function Projects() {
       description: 'Site portfolio moderne et responsive présentant mes compétences, expériences et projets. Design élégant avec animations fluides.',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React.js', 'Tailwind CSS', 'Responsive Design'],
-      liveUrl: null,
+      liveUrl: 'https://kouamefreddev.github.io/fred-folio/',
       githubUrl: 'https://github.com/KouamefredDev/fred-folio', // Mettez l'URL de votre repo GitHub
     },
     {

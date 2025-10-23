@@ -5,7 +5,7 @@ export default function About() {
     { icon: Briefcase, value: '2+', label: 'Années d\'expérience' },
     { icon: Code, value: '10+', label: 'Technologies utilisées' },
     { icon: Users, value: '8+', label: 'Projets réalisés' },
-    { icon: Award, value: '5+', label: 'Certifications' },
+    { icon: Award, value: '7+', label: 'Diplômes et Certifications' },
   ];
 
   return (

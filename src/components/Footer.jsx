@@ -19,7 +19,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Restons connectés</h3>
             <div className="flex justify-start md:justify-end space-x-4 mb-4">
               <a
-                href="https://github.com/kouamefred"
+                href="https://github.com/kouamefredDev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition-colors"
@@ -27,7 +27,7 @@ export default function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/kouamefred"
+                href="https://www.linkedin.com/in/junior-kouame-0aaaa1326"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition-colors"
