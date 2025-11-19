@@ -6,15 +6,19 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <div className="mb-8 relative">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white text-4xl font-bold shadow-xl">
-              FJK
+            <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl border-4 border-slate-200">
+              <img 
+                src="/fred-folio/profile.jpeg" 
+                alt="Kouamé Konan Aimé Frédéric Junior"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-slate-900 mb-4">
-            Consultant Informatique & Développeur Fullstack
+            Développeur Fullstack
           </h1>
           <p className="text-xl sm:text-2xl text-slate-600 mb-6 max-w-2xl">
-            Kouamé Konan Aimé Frédéric Junior
+            KOUAME Konan Aimé Frédéric Junior
           </p>
           <p className="text-lg text-slate-500 mb-10 max-w-3xl leading-relaxed">
             Passionné par la création d'applications web et mobile performantes. 

@@ -1,4 +1,4 @@
-import { Code, Smartphone, Server, Database, Cloud, GitBranch, Users, Monitor } from 'lucide-react';
+import { Code, Smartphone, Server, Database, Cloud, GitBranch, Users, Monitor, Layers } from 'lucide-react';
 
 export default function Skills() {
   const skillCategories = [
@@ -52,6 +52,7 @@ export default function Skills() {
         { name: 'Nginx', level: 40 },
         { name: 'VPS/Serveur mutualisé', level: 50 },
         { name: 'Configuration DNS', level: 50 },
+        { name: 'Docker', level: 20 },
       ],
     },
     {
@@ -63,6 +64,18 @@ export default function Skills() {
         { name: 'Mac', level: 60 },
         { name: 'Windows', level: 90 },
         { name: 'Maintenance informatique', level: 50 },
+      ],
+    },
+    {
+      icon: Layers,
+      title: 'Architecture & Design Pattern',
+      color: 'from-teal-50 to-teal-100',
+      skills: [
+        { name: 'MVC', level: 60 },
+        { name: 'Repository Pattern', level: 40 },
+        { name: 'Clean Architecture', level: 30 },
+        { name: 'Architecture Monolithique', level: 70 },
+        { name: 'Architecture monolithique distribuée', level: 30 },
       ],
     },
     {
