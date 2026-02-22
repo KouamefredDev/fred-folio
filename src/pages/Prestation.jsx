@@ -39,17 +39,6 @@ export default function Prestations() {
     },
     {
       id: 4,
-      category: 'support',
-      title: 'Installation OS & Logiciels',
-      description: 'Installation d\'un système d\'exploitation et logiciels configurés',
-      icon: Settings,
-      price: '15,000',
-      currency: 'FCFA',
-      features: ['Windows/Linux', 'Configuration réseau'],
-      duration: '1-2 jours'
-    },
-    {
-      id: 5,
       category: 'conseil',
       title: 'Analyse des Besoins',
       description: 'Audit complet et rédaction du cahier de charges',
@@ -60,7 +49,7 @@ export default function Prestations() {
       duration: '3-7 jours'
     },
     {
-      id: 6,
+      id: 5,
       category: 'formation',
       title: 'Formation en Informatique',
       description: 'Formations personnalisées en bureautique, utilisation de l\'intelligence artificielle et autres',
@@ -71,7 +60,7 @@ export default function Prestations() {
       duration: 'À définir'
     },
     {
-      id: 7,
+      id: 6,
       category: 'conseil',
       title: 'Conseil en Informatique',
       description: 'Consultations pour l\'optimisation de votre infrastructure IT',
@@ -82,29 +71,18 @@ export default function Prestations() {
       duration: 'Par séance'
     },
     {
-      id: 8,
+      id: 7,
       category: 'engagement',
       title: 'Mode Freelance',
       description: 'Disponibilité pour des missions ponctuelles et projets spécifiques',
       icon: Clock,
-      price: '15,000',
-      currency: 'FCFA/heure',
-      features: ['Facturation horaire', 'Flexibilité', 'Délais rapides'],
+      price: '20,000',
+      currency: 'FCFA/Jour',
+      features: ['Facturation journalier', 'Flexibilité', 'Délais rapides'],
       duration: 'Variable'
     },
     {
-      id: 9,
-      category: 'engagement',
-      title: 'Temps Plein',
-      description: 'Engagement en CDI/CDD pour votre équipe de développement',
-      icon: Users,
-      price: '500,000',
-      currency: 'FCFA/mois',
-      features: ['40h/semaine', 'Intégration équipe', 'Évolution continue'],
-      duration: 'À négocier'
-    },
-    {
-      id: 10,
+      id: 8,
       category: 'engagement',
       title: 'Suivi de Projet',
       description: 'Gestion complète d\'un projet du début à la fin',
@@ -120,7 +98,6 @@ export default function Prestations() {
     { id: 'all', label: 'Tous' },
     { id: 'web', label: 'Web' },
     { id: 'mobile', label: 'Mobile' },
-    { id: 'support', label: 'Support' },
     { id: 'conseil', label: 'Conseil' },
     { id: 'formation', label: 'Formation' },
     { id: 'engagement', label: 'Engagement' }
@@ -136,7 +113,7 @@ export default function Prestations() {
         {/* Header similaire à Hero */}
         <div className="flex flex-col items-center text-center mb-16">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-slate-900 mb-4">
-            Mes Prestations
+            Mes prestations
           </h2>
           <div className="w-20 h-1 bg-slate-800 mx-auto rounded-full mb-6"></div>
           <p className="text-xl sm:text-2xl text-slate-600 mb-6 max-w-3xl">

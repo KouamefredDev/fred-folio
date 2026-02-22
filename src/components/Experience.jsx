@@ -35,14 +35,14 @@ export default function Experience() {
       achievements: [
         'Mise en place d\'un système de gestion de document partagé avec Google Sheets',
         'Gestion et coordination de l\'équipe digitale du projet',
-        'Développement fullstack (web et mobile) de la solution de digitalisation',
+        'Développement full Stack (web et mobile) de la solution de digitalisation',
         'Déploiement et gestion du serveur de production',
         'Conseil technique et formation du personnel de la clinique',
       ],
       tags: ['Chef de Projet', 'Fullstack', 'Management', 'DevOps', 'Conseil'],
     },
     {
-      title: 'Développeur Fullstack Junior',
+      title: 'Développeur Full Stack Junior',
       company: 'Tinitz - Cocody, Abidjan, Côte d\'Ivoire',
       period: 'Mars 2023 - Août 2024',
       description: 'Stage de perfectionnement puis emploi en développement d\'applications web et mobile pour divers clients.',
@@ -70,7 +70,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Expérience</h2>

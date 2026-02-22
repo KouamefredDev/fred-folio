@@ -12,11 +12,9 @@ export default function Header({ activeSection, setActiveSection }) {
     { id: 'home', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
     { id: 'skills', label: 'Compétences' },
-    { id: 'apis-services', label: 'Services API' },
-    { id: 'experience', label: 'Expérience' },
     { id: 'projects', label: 'Projets' },
-    { id: 'contact', label: 'Contact' },
-    { id: 'prestation', label: 'Prestation', external: true },
+    { id: 'prestation', label: 'Prestations', external: true },
+    { id: 'blog', label: 'Blog', external: true },
   ];
 
   // 🔹 Scroll spy automatique uniquement sur la page d'accueil
@@ -84,9 +82,9 @@ export default function Header({ activeSection, setActiveSection }) {
               item.external ? (
                 <Link
                   key={item.id}
-                  to="/prestation"
+                  to={`/${item.id}`}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    location.pathname === '/prestation'
+                    location.pathname === `/${item.id}`
                       ? 'bg-slate-800 text-white'
                       : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                   }`}

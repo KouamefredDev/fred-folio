@@ -1,4 +1,4 @@
-import { Database, Cloud, Store } from 'lucide-react';
+import { Database, Cloud, Store, Shield } from 'lucide-react';
 export default function ApisServices() {
   const apisServices = [
     {
@@ -24,9 +24,16 @@ export default function ApisServices() {
         { name: 'Google Play Store', description: 'Publication Android' },
       ],
     },
+    {
+      category: 'Protection',
+      icon: Shield,
+      services: [
+        { name: 'Cloudflare', description: 'Config CDN et DNS' },
+      ],
+    },
   ];
   return (
-    <section id="apis-services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">APIs & Services Tiers</h2>

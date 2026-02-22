@@ -15,7 +15,7 @@ export default function Hero() {
             </div>
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-slate-900 mb-4">
-            Développeur Fullstack
+            Développeur Full Stack
           </h1>
           <p className="text-xl sm:text-2xl text-slate-600 mb-6 max-w-2xl">
             KOUAME Konan Aimé Frédéric Junior

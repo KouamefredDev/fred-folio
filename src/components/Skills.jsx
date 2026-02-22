@@ -7,11 +7,10 @@ export default function Skills() {
       title: 'Frontend',
       color: 'from-blue-50 to-blue-100',
       skills: [
-        { name: 'React.js', level: 20 },
-        { name: 'JavaScript', level: 40 },
+        { name: 'JavaScript/React.js', level: 30 },
         { name: 'Tailwind CSS', level: 30 },
         { name: 'Bootstrap', level: 80 },
-        { name: 'CSS/HTML', level: 90 },
+        { name: 'CSS/HTML', level: 80 },
       ],
     },
     {
@@ -19,9 +18,8 @@ export default function Skills() {
       title: 'Mobile',
       color: 'from-green-50 to-green-100',
       skills: [
-        { name: 'Flutter', level: 60 },
-        { name: 'Dart', level: 60 },
-        { name: 'Responsive Design', level: 70 },
+        { name: 'Dart/Flutter', level: 50 },
+        { name: 'GetX', level: 40 },
       ],
     },
     {
@@ -29,8 +27,8 @@ export default function Skills() {
       title: 'Backend',
       color: 'from-orange-50 to-orange-100',
       skills: [
-        { name: 'Laravel/PHP', level: 70 },
-        { name: 'Django/Python', level: 30 },
+        { name: 'PHP/Laravel', level: 70 },
+        { name: 'Python/Django', level: 30 },
         { name: 'REST API', level: 50 },
       ],
     },
@@ -42,6 +40,7 @@ export default function Skills() {
         { name: 'MySQL', level: 85 },
         { name: 'PostgreSQL', level: 40 },
         { name: 'SQL', level: 65 },
+        { name: 'Redis', level: 10 },
       ],
     },
     {
@@ -51,7 +50,7 @@ export default function Skills() {
       skills: [
         { name: 'Nginx', level: 40 },
         { name: 'VPS/Serveur mutualisé', level: 50 },
-        { name: 'Configuration DNS', level: 50 },
+        { name: 'Config DNS', level: 50 },
         { name: 'Docker', level: 20 },
       ],
     },
@@ -60,8 +59,7 @@ export default function Skills() {
       title: 'Systèmes & Infrastructure',
       color: 'from-indigo-50 to-indigo-100',
       skills: [
-        { name: 'Linux', level: 60 },
-        { name: 'Mac', level: 60 },
+        { name: 'Linux/Mac', level: 60 },
         { name: 'Windows', level: 90 },
         { name: 'Maintenance informatique', level: 50 },
       ],
@@ -75,7 +73,6 @@ export default function Skills() {
         { name: 'Repository Pattern', level: 40 },
         { name: 'Clean Architecture', level: 30 },
         { name: 'Architecture Monolithique', level: 70 },
-        { name: 'Architecture monolithique distribuée', level: 30 },
       ],
     },
     {
@@ -86,7 +83,6 @@ export default function Skills() {
         { name: 'Git/GitHub/GitLab', level: 60 },
         { name: 'MERISE/UML', level: 55 },
         { name: 'Design graphique', level: 60 },
-        { name: 'Prototypage', level: 55 },
       ],
     },
     {

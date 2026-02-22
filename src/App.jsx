@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Prestations from './pages/Prestation';
+import Blog from './pages/Blog';
 
 function Home({ activeSection, setActiveSection }) {
   return (
@@ -58,6 +59,7 @@ function App() {
           element={<Home activeSection={activeSection} setActiveSection={setActiveSection} />}
         />
         <Route path="/prestation" element={<Prestations />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
 
       <Footer />
