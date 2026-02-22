@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fred-folio/static/css/main.d3d84caf.css",
-    "main.js": "/fred-folio/static/js/main.75f68e84.js",
+    "main.css": "/fred-folio/static/css/main.d97fc822.css",
+    "main.js": "/fred-folio/static/js/main.af586d02.js",
     "index.html": "/fred-folio/index.html",
-    "main.d3d84caf.css.map": "/fred-folio/static/css/main.d3d84caf.css.map",
-    "main.75f68e84.js.map": "/fred-folio/static/js/main.75f68e84.js.map"
+    "main.d97fc822.css.map": "/fred-folio/static/css/main.d97fc822.css.map",
+    "main.af586d02.js.map": "/fred-folio/static/js/main.af586d02.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3d84caf.css",
-    "static/js/main.75f68e84.js"
+    "static/css/main.d97fc822.css",
+    "static/js/main.af586d02.js"
   ]
 }
